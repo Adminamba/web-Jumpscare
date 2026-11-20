@@ -86,3 +86,68 @@ img {
       height: 100%;
       object-fit: cover; /* Memenuhi layar tanpa ruang kosong */
     }
+
+/* Pembungkus agar balon petunjuk pas berada di atas tombol Play */
+.play-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Desain balon petunjuk (Tooltip) */
+.tooltip-guide {
+  position: absolute;
+  bottom: 130%; /* Muncul tepat di atas tombol Play */
+  background-color: #111111;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+  padding: 6px 12px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  pointer-events: none; /* Agar tidak menghalangi klik */
+  animation: bounceGuide 1.5s infinite ease-in-out;
+}
+
+/* Segitiga kecil di bawah balon petunjuk menunjuk ke tombol Play */
+.tooltip-guide::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #111111 transparent transparent transparent;
+}
+
+/* Efek gelombang cahaya berdenyut pada tombol Play */
+.btn-play {
+  animation: pulsePlay 1.8s infinite;
+}
+
+/* Animasi naik-turun halus pada balon teks */
+@keyframes bounceGuide {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Animasi denyut lingkaran di sekitar tombol Play */
+@keyframes pulsePlay {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 8, 68, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 14px rgba(255, 8, 68, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 8, 68, 0);
+  }
+}
+
