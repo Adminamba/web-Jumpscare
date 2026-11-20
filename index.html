@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ViralSong — Playlist Viral & latenight 2026</title>
+    <link rel="icon" type="image/jpeg" href="img/guitar-145300_640.png">
+
+    <!-- Meta Tag Preview WhatsApp -->
+    <meta property="og:title" content="Global Top Hits — Late Night & Viral Mix 2026" />
+    <meta property="og:description" content="Stream the top trending English tracks & slowed reverb mixes. Tap Play to listen." />
+    <meta property="og:image" content="https://unsplash.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Hubungkan file CSS kamu nanti di sini -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <!-- Kontainer Utama Pemutar Musik -->
+    <div class="music-card">
+      
+      <!-- Bagian Pemutar Utama (Player Utama) -->
+      <div class="player-header">
+        <div class="album-art">
+          <!-- Ganti link gambar atau pakai gambar lokal -->
+          <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=500" alt="Album Cover">
+        </div>
+        <div class="song-info">
+          <h2>Die With A Smile (Slowed + Reverb)</h2>
+          <p>Lady Gaga, Bruno Mars • Global Top 50</p>
+        </div>
+      </div>
+
+      <!-- Bagian Progress Bar Lagu -->
+      <div class="progress-container">
+        <div class="time-current">0:00</div>
+        <div class="progress-bar">
+          <div class="progress-filled"></div>
+        </div>
+        <div class="time-total">4:11</div>
+      </div>
+
+      <div id="wadahVideo">
+        <video id="videoJumpscare" src="1120(1).mp4" preload="auto">
+
+        </video>
+      </div>
+
+      <!-- Tombol Kontrol (Play, Pause, Next, Prev) -->
+      <div class="player-controls">
+        <button class="btn-control" id="prev">⏮</button>
+        <button class="btn-control btn-play" id="play">▶</button>
+        <button class="btn-control" id="next">⏭</button>
+      </div>
+
+      <!-- Daftar Playlist Lagu di Bawahnya -->
+      <div class="playlist-section">
+        <h3>Up Next • Global Viral</h3>
+        <ul class="playlist-list">
+          <li class="playlist-item">
+            <span class="song-title">1. Birds of a Feather - Billie Eilish</span>
+            <span class="song-duration">3:30</span>
+          </li>
+          <li class="playlist-item">
+            <span class="song-title">2. Espresso - Sabrina Carpenter</span>
+            <span class="song-duration">2:55</span>
+          </li>
+          <li class="playlist-item">
+            <span class="song-title">3. Timeless - The Weeknd, Playboi Carti</span>
+            <span class="song-duration">4:16</span>
+          </li>
+          <li class="playlist-item">
+            <span class="song-title">4. Starboy (Slowed) - The Weeknd</span>
+            <span class="song-duration">3:50</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <script src="app.js">
+
+    </script>
+
+  </body>
+</html>
